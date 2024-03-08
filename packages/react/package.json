@@ -12,8 +12,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@jonathas-ui/ts-config": "*",
     "@jonathas-ui/tokens": "*",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2"

@@ -1,1 +1,3 @@
-import {} from '@jonathas-ui/tokens'
+import {colors} from '@jonathas-ui/tokens'
+
+console.log(colors)
