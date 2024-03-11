@@ -1,0 +1,26 @@
+{
+    "restoreTerminals.terminals": [
+        {
+          "splitTerminals": [
+            {
+              "name": "react",
+              "shouldRunCommands": true,
+              "commands": ["cd packages/react", "npm run dev"]
+            },
+            {
+              "name": "storybook",
+              "shouldRunCommands": true,
+              "icon": "_comment", 
+              "commands": ["cd packages/docs", "npm run dev"]
+            }
+          ]
+        },
+        {
+          "splitTerminals": [
+            {
+              "name": "install"
+            }
+          ]
+        }
+      ]
+}
