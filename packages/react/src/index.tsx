@@ -7,8 +7,10 @@ const Button = styled('button', {
 })
 
 export function App() {
-  <div>
-    <h1>Teste</h1>
-    <Button>Teste</Button>
-  </div>
+  return (
+    <div>
+      <h1>Teste</h1>
+      <Button>Teste</Button>
+    </div>
+  )
 }
