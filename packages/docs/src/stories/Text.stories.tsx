@@ -14,6 +14,6 @@ export const Primary: StoryObj = {}
 export const CustomTag: StoryObj = {
   args: {
     children: 'Lorem ipsum but a little bit customized.',
-    as: 'a',
+    as: 'strong',
   },
 }
