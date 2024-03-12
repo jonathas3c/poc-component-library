@@ -28,8 +28,10 @@
     "vite": "^5.1.5"
   },
   "dependencies": {
+    "@jonathas-ui/eslint-config": "*",
+    "@jonathas-ui/ts-config": "*",
     "@jonathas-ui/react": "*",
     "@jonathas-ui/tokens": "*",
-    "@jonathas-ui/eslint-config": "*"
+    "polished": "^4.3.1"
   }
 }
