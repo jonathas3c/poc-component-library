@@ -1,4 +1,6 @@
 {
+  "editor.formatOnSave": true,
+
   "restoreTerminals.terminals": [
     {
       "splitTerminals": [
