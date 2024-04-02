@@ -29,9 +29,10 @@
   },
   "dependencies": {
     "@jonathas-ui/eslint-config": "*",
-    "@jonathas-ui/ts-config": "*",
     "@jonathas-ui/react": "*",
     "@jonathas-ui/tokens": "*",
+    "@jonathas-ui/ts-config": "*",
+    "phosphor-react": "^1.4.1",
     "polished": "^4.3.1"
   }
 }
