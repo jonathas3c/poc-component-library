@@ -1,3 +1,5 @@
+[![Deploy docs](https://github.com/jonathas3c/poc-component-library/actions/workflows/deploy-docs.yml/badge.svg?branch=master)](https://github.com/jonathas3c/poc-component-library/actions/workflows/deploy-docs.yml)
+
 # Components
 
  - [ ] Text
