@@ -19,7 +19,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build --mode production
+      - run: npm run build
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
