@@ -26,7 +26,7 @@ const config = {
     autodocs: true,
   },
   viteFinal: (config, { configType }) => {
-    if (configType === 'PRODUCTION') {
+    if (!!configType) {
       config.base = '/poc-component-library/'
     }
     return config
