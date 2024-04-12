@@ -24,8 +24,13 @@ jobs:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
+      - name: Print Environment Variables (Optional for Debugging)
+        run: |
+          echo "Available environment variables:"
+          env
+
       - name: Deploy Storybook
-        working-directory: ./packages/docs
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static && touch storybook-static/.nojekyll
+        working-directory: ./packages/docsW
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GH_DEPLOY_TOKEN }}
