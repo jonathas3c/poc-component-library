@@ -1,28 +1,27 @@
 [![Deploy docs](https://github.com/jonathas3c/poc-component-library/actions/workflows/deploy-docs.yml/badge.svg?branch=master)](https://github.com/jonathas3c/poc-component-library/actions/workflows/deploy-docs.yml)
 
-# Components
+<div align="center">
+  <h1>@jonathas-ui - Component Library POC</h1>
+  <p>A component library POC using Storybook and React</p>
+  <p><a href="https://jonathas3c.github.io/poc-component-library/">Live project here</a></p>
+</div>
 
- - [x] Text
- - [x] Heading
- - [x] Box
- - [x] Button
- - [x] TextInput
- - [x] TextArea
- - [x] Checkbox
- - [x] Avatar
- - [x] Multistep
+This projects aims to being a component library POC using [Storybook](https://storybook.js.org/) and [React](https://reactjs.org/). It's meant to be a representation of a component library that I'm currently working on to enhance topics as (but not limited to) coding standards, test coverage, accessibility, development awareness and others, while improving developer experience and improving onboarding processes considerably. In this specific project we did opt for using Stitches and Radix as a CSS-in-JS solution for building the components, but it's not a requirement.
 
- # Dependencies
+This project is organized following a monorepo structure, separating each corresponding package to make it easier to maintain and edploys new versions for each when needed, but at the same time allowing all the project to be developed and tested in a single repository. If you want to run the project by yourself, please clone the repository and inside the main folder run `npm install`, or`yarn install` in case you use yarn, and then `npm run dev` `yarn run dev` to start the project.
 
- - Typescript: Project will be developer with TS to ensure code quality, auto completion and scalability as project grows.
- - TSUP: Does almost the same than Typescript, but will be really helpful when building our project, once it allows us to build our projects for both commonJS and ES modules support, permitting us to not only build the project for newer js syntax projects, but to older ones as well. Also it allows us to easily generate definition files (d.ts) that will help IDEs with intellisense. I also works better than just tsc, as it allows us to build our project in parallel, and it also allows us to build our project in watch mode. The reaslon behind this performance is because TSUP is built with esbuild, which is a really fast bundler.
+> 📘 Please note that these commands should be run at the base directory of the project, and not inside any of the packages. The idea is that we become able to run all the packages as one and if we run anything inside a package, we'll need to trigger the others independently.
 
- Each package will have its own `package.json` file, because each package will handle a specifc responsability (tokens will handle variables used by the library, react will handle the components, etc...) and once each has it's owns dependencies, that's why each has their own package.json file. The parent of all packages will also have a package.json file, whose purpose will only to declare that this parent directory should not be push to npm when deployed, but will serve as a gateway to interconnect all the packages together. We do that by using the `"workspaces"` structure, to declare that `packages/*` is the place where all packages reside. That will allow us, for example, to remove each of the `node_modules` folders and `package-lock.json` from each package, and when installing the project, only one `node_modules` will be created, and packages with common dependencies won't install it twice. Advantages of monorepos, my friend.
+That being said, after running the dev script, you might be able to see all the packages working together at once, but only the storybook docs will be available at the moment. you can access it at <code><a href="http://localhost:6006">http://localhost:6006</a></code>
 
- We need to remember to set the adequate references for each of the packages, like declaring the `main` entrypoint for each package, the main `esm reference` to each package, and the `types` entrypoint for each package in their respectives `package.json` file.
+# Component Roadmap (100%)
 
- ```json
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
- ```
+- [x] Text
+- [x] Heading
+- [x] Box
+- [x] Button
+- [x] TextInput
+- [x] TextArea
+- [x] Checkbox
+- [x] Avatar
+- [x] Multistep
