@@ -1,8 +1,8 @@
+![](https://capsule-render.vercel.app/api?type=slice&height=142&color=3b786c&text=@jonathas-ui&fontAlignY=31&animation=fadeIn&desc=Component%20library%20POC&reversal=true&fontAlign=27&descAlign=24&descAlignY=54&fontColor=fff)
+
 [![Deploy docs](https://github.com/jonathas3c/poc-component-library/actions/workflows/deploy-docs.yml/badge.svg?branch=master)](https://github.com/jonathas3c/poc-component-library/actions/workflows/deploy-docs.yml)
 
 <div align="center">
-  <h1>@jonathas-ui - Component Library POC</h1>
-  <p>A component library POC using Storybook and React</p>
   <p><a href="https://jonathas3c.github.io/poc-component-library/">Live project here</a></p>
 </div>
 
